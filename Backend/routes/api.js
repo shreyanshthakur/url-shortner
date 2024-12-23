@@ -1,6 +1,6 @@
 const express = require("express");
 const zod = require("zod");
-
+const db = require("../db");
 const router = express.Router();
 
 const userSignInSchema = zod.object({

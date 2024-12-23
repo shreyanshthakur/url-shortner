@@ -2,9 +2,9 @@ const express = require("express");
 
 const app = express();
 
-const userRouter = require("./routes/userRouter");
+const apiRouter = require("./routes/api");
 
-app.use("/user", userRouter);
+app.use("/shorten", apiRouter);
 
 app.use(express.json());
 
